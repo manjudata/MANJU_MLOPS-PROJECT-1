@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/its_pritty_prit/Documents/MLOPS-PROJECT-1/mlruns/0/b2e60598688c4349a6b4030333caef90/artifacts
+end_time: 1754948245074
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b2e60598688c4349a6b4030333caef90
+run_name: resilient-bass-104
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754948239224
+status: 3
+tags: []
+user_id: its_pritty_prit

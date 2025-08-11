@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/its_pritty_prit/Documents/MLOPS-PROJECT-1/mlruns/0/7484f134bc744a028088b074f67f9681/artifacts
+end_time: 1754921443638
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7484f134bc744a028088b074f67f9681
+run_name: auspicious-pig-245
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754921438140
+status: 3
+tags: []
+user_id: its_pritty_prit

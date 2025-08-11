@@ -1,0 +1,69 @@
+2025-08-11 17:37:06,119 - INFO - Succesfully read the YAML file
+2025-08-11 17:37:06,120 - INFO - Data Ingestion started with my_mybucket-manju and file is  Hotel Reservations.csv
+2025-08-11 17:37:06,120 - INFO - Starting data ingestion process
+2025-08-11 17:37:15,261 - ERROR - Error while downloading the csv file: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-08-11 17:37:15,262 - ERROR - CustomException : Error in /Users/its_pritty_prit/Documents/MLOPS-PROJECT-1/src/data_ingestion.py , line 25 : Failed to download csv file 
+2025-08-11 17:37:15,262 - INFO - Data ingestion completed
+2025-08-11 17:37:15,265 - INFO - Succesfully read the YAML file
+2025-08-11 17:37:15,265 - INFO - Loading data from RAW directory
+2025-08-11 17:37:15,265 - INFO - Loading data
+2025-08-11 17:37:15,347 - INFO - Loading data
+2025-08-11 17:37:15,365 - INFO - Starting our Data Processing step
+2025-08-11 17:37:15,365 - INFO - Dropping the columns
+2025-08-11 17:37:15,392 - INFO - Applying Label Encoding
+2025-08-11 17:37:15,410 - INFO - Label Mappings are : 
+2025-08-11 17:37:15,410 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-08-11 17:37:15,410 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-08-11 17:37:15,410 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-08-11 17:37:15,410 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-08-11 17:37:15,410 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-08-11 17:37:15,410 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-08-11 17:37:15,410 - INFO - Doing Skewness HAndling
+2025-08-11 17:37:15,419 - INFO - Starting our Data Processing step
+2025-08-11 17:37:15,419 - INFO - Dropping the columns
+2025-08-11 17:37:15,426 - INFO - Applying Label Encoding
+2025-08-11 17:37:15,432 - INFO - Label Mappings are : 
+2025-08-11 17:37:15,432 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-08-11 17:37:15,432 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-08-11 17:37:15,432 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-08-11 17:37:15,433 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-08-11 17:37:15,433 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-08-11 17:37:15,433 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-08-11 17:37:15,433 - INFO - Doing Skewness HAndling
+2025-08-11 17:37:15,439 - INFO - Handling Imbalanced Data
+2025-08-11 17:37:15,561 - INFO - Data balanced sucesffuly
+2025-08-11 17:37:15,563 - INFO - Handling Imbalanced Data
+2025-08-11 17:37:15,580 - INFO - Data balanced sucesffuly
+2025-08-11 17:37:15,581 - INFO - Starting our Feature selection step
+2025-08-11 17:37:18,377 - INFO - Features selected : ['lead_time' 'no_of_special_requests' 'avg_price_per_room' 'arrival_month'
+ 'arrival_date' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'type_of_meal_plan' 'room_type_reserved']
+2025-08-11 17:37:18,379 - INFO - Feature slection completed sucesfully
+2025-08-11 17:37:18,403 - INFO - Saving our data in processed folder
+2025-08-11 17:37:18,496 - INFO - Data saved sucesfuly to artifacts/processed/processed_train.csv
+2025-08-11 17:37:18,496 - INFO - Saving our data in processed folder
+2025-08-11 17:37:18,518 - INFO - Data saved sucesfuly to artifacts/processed/processed_test.csv
+2025-08-11 17:37:18,518 - INFO - Data processing completed sucesfully
+2025-08-11 17:37:19,237 - INFO - Starting our Model Training pipeline
+2025-08-11 17:37:19,238 - INFO - Starting our MLFLOW experimentation
+2025-08-11 17:37:19,238 - INFO - Logging the training and testing datset to MLFLOW
+2025-08-11 17:37:19,244 - INFO - Loading data from artifacts/processed/processed_train.csv
+2025-08-11 17:37:19,244 - INFO - Loading data
+2025-08-11 17:37:19,276 - INFO - Loading data from artifacts/processed/processed_test.csv
+2025-08-11 17:37:19,276 - INFO - Loading data
+2025-08-11 17:37:19,285 - INFO - Data splitted sucefully for Model Training
+2025-08-11 17:37:19,285 - INFO - Intializing our model
+2025-08-11 17:37:19,285 - INFO - Starting our Hyperparamter tuning
+2025-08-11 17:37:19,285 - INFO - Starting our Hyperparamter tuning
+2025-08-11 17:37:24,933 - INFO - Hyperparamter tuning completed
+2025-08-11 17:37:24,934 - INFO - Best paramters are : {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-08-11 17:37:24,934 - INFO - Evaluating our model
+2025-08-11 17:37:25,001 - INFO - Accuracy Score : 0.8814506539833532
+2025-08-11 17:37:25,001 - INFO - Precision Score : 0.8670480549199084
+2025-08-11 17:37:25,001 - INFO - Recall Score : 0.9010701545778834
+2025-08-11 17:37:25,001 - INFO - F1 Score : 0.883731778425656
+2025-08-11 17:37:25,001 - INFO - saving the model
+2025-08-11 17:37:25,045 - INFO - Model saved to artifacts/models/lgbm_model.pkl
+2025-08-11 17:37:25,045 - INFO - Logging the model into MLFLOW
+2025-08-11 17:37:25,053 - INFO - Logging Params and metrics to MLFLOW
+2025-08-11 17:37:25,073 - INFO - Model Training sucesfullly completed
