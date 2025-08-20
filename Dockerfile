@@ -1,5 +1,4 @@
-# Use a lightweight Python image
-FROM python:3.13-slim
+FROM python:3.12-slim
 
 # Set environment variables to prevent Python from writing .pyc files & Ensure Python output is not buffered
 ENV PYTHONDONTWRITEBYTECODE=1 \
@@ -19,6 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy the application code
 COPY . .
 
+RUN python -m pip install --upgrade pip
 # Install the package in editable mode
 RUN pip install --no-cache-dir -e .
 
