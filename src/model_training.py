@@ -51,7 +51,13 @@ class ModelTraining:
         try:
             logger.info("Intializing our model")
 
-            lgbm_model = lgb.LGBMClassifier(random_state=self.random_search_params["random_state"])
+            lgbm_model = lgb.LGBMClassifier(
+                random_state=self.random_search_params["random_state"],
+                boosting_type= 'gbdt',
+                force_row_wise = True,
+                n_jobs= -1,
+                verbosity = -1
+         )
 
             logger.info("Starting our Hyperparamter tuning")
 
