@@ -1,15 +1,18 @@
 # Use a lightweight Python image
-FROM python:slim
+FROM python:3.13-slim
 
 # Set environment variables to prevent Python from writing .pyc files & Ensure Python output is not buffered
 ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1
+    PYTHONUNBUFFERED=1 \
+    # Quiet GitPython warnings if Git isn't needed in some code paths
+    GIT_PYTHON_REFRESH=quiet
 
 # Set the working directory
 WORKDIR /app
 
 # Install system dependencies required by LightGBM
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
     libgomp1 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
